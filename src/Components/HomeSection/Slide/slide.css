@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+:root {
+  --poppins: "Poppins", sans-serif;
+  --black: #222222;
+  --white: #fff;
+  --color-bg: #1f1f38;
+  --color-bg-green: #31b675;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-light: rgba(255, 255, 255, 0.6);
+  --transition: all 400ms ease;
+}
+
+.swiper-slide {
+  min-height: calc(100vh - 20vh);
+}
+
+@media (max-width: 1200px) {
+  .swiper-slide {
+    min-height: calc(100vh - 35vh);
+  }
+}
+
+.swiper-slide form .form-group .form-control {
+  width: 100%;
+}
+
+.slide-form {
+  position: absolute;
+  top: 30%;
+  z-index: 99;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 40rem;
+  border-radius: 5px;
+  color: var(--white);
+  padding: 2rem;
+}
+
+.slide-form input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+
+.slide-form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: var(--color-bg-green);
+  color: var(--white);
+  font-weight: 500;
+}
+/*# sourceMappingURL=slide.css.map */

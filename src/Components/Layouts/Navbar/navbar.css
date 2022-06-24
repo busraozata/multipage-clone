@@ -1,0 +1,204 @@
+/*--------header------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+:root {
+  --poppins: "Poppins", sans-serif;
+  --black: #222222;
+  --white: #fff;
+  --color-bg: #1f1f38;
+  --color-bg-green: #31b675;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-light: rgba(255, 255, 255, 0.6);
+  --transition: all 400ms ease;
+}
+
+.navbar {
+  background: var(--black);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+@media (max-width: 991px) {
+  .navbar ul.nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    top: 5rem;
+    background: var(--black);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 10vh);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+  }
+  .navbar ul.nav-menu li a {
+    font-size: 1rem !important;
+  }
+  .navbar ul.nav-menu.active {
+    width: 100%;
+    visibility: visible;
+    opacity: 9;
+  }
+}
+
+.navbar ul li {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin: 0 30px 0 0;
+  list-style-type: none;
+}
+
+.navbar ul li i {
+  margin-right: 0.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .navbar ul li a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar ul.login-area {
+    position: absolute;
+    right: 0.5rem;
+  }
+  .navbar ul.login-area li {
+    margin: 0 10px 0 0;
+  }
+  .navbar ul.login-area li a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar ul.login-area li a {
+    font-size: 0.7rem;
+  }
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar .primary-btn {
+  padding: 10px 20px;
+  background-color: var(--color-bg-green);
+  color: var(--white);
+  font-weight: 400;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.navbar .primary-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.navbar .menu-icon {
+  position: absolute;
+  left: 1.5rem;
+}
+
+.navbar .menu-icon i {
+  color: var(--white);
+}
+
+@media (max-width: 991px) {
+  .navbar .menu-icon i {
+    font-size: 1.5rem;
+  }
+}
+
+header {
+  background-color: var(--white);
+  padding: 40px 0rem 20px 0rem !important;
+}
+
+@media (max-width: 991px) {
+  header .header-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    text-align: center;
+  }
+  header .header-area .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header .header-area .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .header-area .contact .box {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  header .header-area .contact .box i {
+    font-size: 1.5rem !important;
+  }
+  header .header-area .contact .box .text h4 {
+    font-size: 0.8rem !important;
+  }
+  header .header-area .contact .box .text a {
+    font-size: 0.7rem !important;
+  }
+}
+
+header .header-area .contact .box {
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+header .header-area .contact .box i {
+  font-size: 2rem;
+  color: var(--color-bg-green);
+}
+
+header .header-area .contact .box .text h4 {
+  margin-bottom: 0rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+header .header-area .contact .box .text a {
+  font-size: 0.8rem;
+  color: gray;
+  text-decoration: none;
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+.swiper-slide {
+    min-height: calc(100vh - 20vh);
+    @include breakpoint(xl) {
+        min-height: calc(100vh - 35vh);
+    }
+    form {
+        .form-group {
+            .form-control {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.slide-form {
+    position: absolute;
+    top: 30%;
+    z-index: 99;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 40rem;
+    border-radius: 5px;
+    color: var(--white);
+    padding: 2rem;
+
+    input {
+        width: 100%;
+        padding: 15px;
+        outline: none;
+        border: none;
+    }
+    button{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 15px;
+        background-color: var(--color-bg-green);
+        color: var(--white);
+        font-weight: 500;
+    }
+}

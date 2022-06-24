@@ -1,0 +1,159 @@
+/*--------header------------*/
+@import "../../../styles/variables.scss";
+.navbar {
+    background: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 10vh;
+    line-height: 10vh;
+    ul {
+        &.nav-menu {
+            @include breakpoint(lg) {
+                flex-direction: column;
+                position: absolute;
+                width: 0;
+                opacity: 0;
+                visibility: hidden;
+                top: 5rem;
+                background: var(--black);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: calc(100vh - 10vh);
+                justify-content: center;
+                transition: var(--transition);
+                li {
+                    a {
+                        font-size: 1rem !important;
+                    }
+                }
+                &.active {
+                    width: 100%;
+                    visibility: visible;
+                    opacity: 9;
+                }
+            }
+        }
+        li {
+            display: inline-block;
+            transition: all 0.2s ease-out;
+            margin: 0 30px 0 0;
+            list-style-type: none;
+            i {
+                margin-right: 0.5rem;
+            }
+            a {
+                text-decoration: none;
+                color: var(--white);
+                font-size: 1rem;
+                font-weight: 500;
+                @include breakpoint(xl) {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        &.login-area {
+            @include breakpoint(lg) {
+                position: absolute;
+                right: 0.5rem;
+                li {
+                    margin: 0 10px 0 0;
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            @include breakpoint(sm) {
+                li {
+                    a {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .primary-btn {
+        padding: 10px 20px;
+        background-color: var(--color-bg-green);
+        color: var(--white);
+        font-weight: 400;
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--white);
+            color: var(--black);
+        }
+    }
+    .menu-icon {
+        position: absolute;
+        left: 1.5rem;
+        i {
+            color: var(--white);
+            @include breakpoint(lg) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+header {
+    background-color: var(--white);
+    padding: 40px 0rem 20px 0rem !important;
+    .header-area {
+        @include breakpoint(lg) {
+            flex-direction: column;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center;
+            .logo {
+                margin-bottom: 1rem;
+            }
+        }
+        .contact {
+            @include breakpoint(sm) {
+                flex-direction: column;
+                .box {
+                    margin-bottom: 1rem;
+                    text-align: left;
+                    i {
+                        font-size: 1.5rem !important;
+                    }
+                    .text {
+                        h4 {
+                            font-size: 0.8rem !important;
+                        }
+                        a {
+                            font-size: 0.7rem !important;
+                        }
+                    }
+                }
+            }
+            .box {
+                gap: 1rem;
+                margin-right: 1rem;
+                i {
+                    font-size: 2rem;
+                    color: var(--color-bg-green);
+                }
+                .text {
+                    h4 {
+                        margin-bottom: 0rem;
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+                    a {
+                        font-size: 0.8rem;
+                        color: gray;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
