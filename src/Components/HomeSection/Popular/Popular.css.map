@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,QADI,CACJ,MAAM,CAAA;EACF,QAAQ,EAAE,QAAQ;CAIrB;;AANL,AAGQ,QAHA,CACJ,MAAM,CAEF,CAAC,CAAA;EACG,QAAQ,EAAE,QAAQ;CACrB",
+    "sources": [
+        "Popular.scss"
+    ],
+    "names": [],
+    "file": "Popular.css"
+}

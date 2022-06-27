@@ -74,6 +74,15 @@
 .features h1 span {
     color: #31b675;
 }
+.secondary-btn{
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: var(--color-bg-green);
+    color: var(--white);
+    font-weight: 500;
+
+}
 @media screen and (max-width: 768px) {
     .features .flex_space,
     .aboutCard {

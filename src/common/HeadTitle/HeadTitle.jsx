@@ -7,11 +7,11 @@ export default function HeadTitle() {
     <>
       <section className="image-heading d-flex">
         <div className="container">
-          <h1>{location.pathname.split("/")[1]}</h1>
+          <h1>{location.pathname.replace("-", " ").split("/")[1]}</h1>
 
           <div>
-            <Link to="/">Home</Link> /
-            <span>{location.pathname.split("/")[1]}</span>
+            <Link to="/">Home</Link>/
+            <span>{location.pathname.replace("-", " ").split("/")[1]}</span>
           </div>
         </div>
       </section>

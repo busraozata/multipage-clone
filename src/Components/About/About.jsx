@@ -29,7 +29,7 @@ export default function About() {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Magnam, placeat?
               </p>
-              <button className="secondary-btn">
+              <button className="control-btn">
                 Explore More <i class="fa-solid fa-circle-right"></i>{" "}
               </button>
             </div>

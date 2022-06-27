@@ -11,14 +11,7 @@ export default function Gallery() {
         <div className="container">
           <div className="row">
             {galleryData.map((value, id) => {
-              return (
-                <Card
-                
-                  images={value.img}
-                  title={value.title}
-                  key={id}
-                />
-              );
+              return <Card images={value.img} title={value.title} key={id} />;
             })}
           </div>
         </div>

@@ -1,0 +1,34 @@
+.desi .title {
+  margin: 0;
+  background-color: #31b675;
+}
+
+.desi h3 {
+  margin: 0;
+  padding: 15px 0 15px 0;
+  color: white;
+}
+
+.gallery .items {
+  position: relative;
+}
+
+.gallery .items a {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.199);
+  position: absolute;
+}
+/*# sourceMappingURL=Destination.css.map */

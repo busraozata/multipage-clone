@@ -18,7 +18,7 @@ export default function Card(props) {
     <>
       <div
         options={{ infinite: false }}
-        className="col-lg-6 col-md-6"
+        className="col-lg-6 col-md-6 my-3"
         data-fancybox="gallery"
         data-src={props.images}
       >

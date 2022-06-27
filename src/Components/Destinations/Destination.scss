@@ -1,0 +1,27 @@
+.desi .title {
+    margin: 0;
+    background-color: #31b675;
+}
+.desi h3 {
+    margin: 0;
+    padding: 15px 0 15px 0;
+    color: white;
+}
+
+.gallery {
+    .items {
+        position: relative;
+        a {
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.199);
+            position: absolute;
+        }
+    }
+}
